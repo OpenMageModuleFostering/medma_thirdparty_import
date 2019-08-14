@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Medma_Thirdparty_Import</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension imports the products from 3rd Party websites.</summary>
+    <description>This extension imports the products from 3rd Party websites. The extension is very useful as it imports all kinds of products. This extension also provides category translation section.</description>
+    <notes>This is a latest release.</notes>
+    <authors><author><name>Medma Infomatix</name><user>Medma_Infomatix</user><email>gaurav@medma.in</email></author></authors>
+    <date>2012-12-27</date>
+    <time>08:03:27</time>
+    <contents><target name="magelocal"><dir name="Medma"><dir name="Categorytrans"><dir name="Block"><dir name="Adminhtml"><dir name="Categorytrans"><dir name="Edit"><file name="Form.php" hash="bdcfd9b80876268b766f41388329ad78"/><dir name="Tab"><file name="Form.php" hash="dfd11760871042496386ae18c5ae9bff"/></dir><file name="Tabs.php" hash="da936d3c6d6dd467ccd1200ab5764d3b"/></dir><file name="Edit.php" hash="dccb4622663d510030581e493c00d1af"/><file name="Grid.php" hash="e69f0b4e305dbebd98c83da6f6901a48"/></dir><file name="Categorytrans.php" hash="0250392f9b78cf86d450947aa94ff6c2"/></dir><file name="Categorytrans.php" hash="b767fcb97b032486961ca00bb1441f64"/></dir><dir name="Helper"><file name="Data.php" hash="da26a932e30928df5237b4f67d6785f3"/></dir><dir name="Model"><file name="Categorytrans.php" hash="862286a1517208a2c0e7b5a7007ced72"/><dir name="Mysql4"><dir name="Categorytrans"><file name="Collection.php" hash="0ab3e3a9d8607a86e65361892181eed3"/></dir><file name="Categorytrans.php" hash="8d87758fc0030774c1b8a6dbb289fa7f"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="CategorytransController.php" hash="77e6bf2ad05a346ee2008e2cb31ddbec"/></dir></dir><dir name="etc"><file name="config.xml" hash="3243206ab6d62d6979cfb82994b0ad53"/></dir><dir name="sql"><dir name="categorytrans_setup"><file name="mysql4-install-0.1.0.php" hash="91e5b8035df2ca00565fb73497ad2a22"/></dir></dir></dir><dir name="Importproduct"><dir name="Model"><file name="Observer.php" hash="43adf1a9d1d91d541b86f8c8149ff7d8"/></dir><dir name="etc"><file name="config.xml" hash="8e916eaa96814234904aae9bb531c79e"/></dir></dir><dir name="Productimport"><dir name="Helper"><file name="Data.php" hash="3c830ae3a2dd6b619501b66eed744cb1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ProductimportController.php" hash="823773010252da7b2f6a8ca5dc9106d0"/></dir></dir><dir name="etc"><file name="config.xml" hash="c639cdb1852134f7da03984d81e75f21"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Medma_Categorytrans.xml" hash="e790371ea43b03a9c2789de3bec6f414"/><file name="Medma_Importproduct.xml" hash="dd15b3231fa59557857cde7df05c151b"/><file name="Medma_Productimport.xml" hash="8b7dfaf182a15242041ede908a0c0de5"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="productimport.xml" hash="5ff801607ff53f908c0f832971f4a7ec"/></dir><dir name="template"><dir name="productImport"><file name="import.phtml" hash="ba3d1815728623877506936035e2e73a"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

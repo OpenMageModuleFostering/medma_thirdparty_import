@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+	    <Medma_Categorytrans>
+            <version>0.1.2</version>
+    	   </Medma_Categorytrans>
+    </modules>
+    <admin>
+        <routers>
+			<categorytrans>
+				<use>admin</use>
+				<args>
+					<module>Medma_Categorytrans</module>
+					<frontName>categorytrans</frontName>
+				</args>
+			</categorytrans>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+		<menu>
+		    	<catalog>
+				<children>
+					<categorytrans translate="title" module="categorytrans">
+						<title>Category Translate</title>
+						<sort_order>6</sort_order>
+						<action>categorytrans/adminhtml_categorytrans</action>
+					</categorytrans>
+				</children>
+			</catalog>
+		</menu>
+		
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+			    	<catalog>
+					<children>
+						<categorytrans translate="title">
+							<title>Category Translate</title>
+						<sort_order>1600</sort_order>
+						</categorytrans>
+					</children>
+				</catalog>
+                    </children>
+                </admin>
+            </resources>
+        </acl> 
+    </adminhtml>  
+    
+    <global>
+	    <models>
+		    <categorytrans>
+			    <class>Medma_Categorytrans_Model</class>
+			    <resourceModel>categorytrans_mysql4</resourceModel>
+		    </categorytrans>
+		   
+		    <categorytrans_mysql4>
+			    <class>Medma_Categorytrans_Model_Mysql4</class>
+			    <entities>
+				    <categorytrans>
+					    <table>categorytranslate</table>
+				    </categorytrans>
+			    </entities>
+		    </categorytrans_mysql4>
+		    
+        	</models>
+       <resources>
+            		<categorytrans_setup>
+                		<setup>
+                    			<module>Medma_Categorytrans</module>
+                		</setup>
+                		<connection>
+                    			<use>core_setup</use>
+                		</connection>
+            		</categorytrans_setup>
+            		<categorytrans_write>
+                		<connection>
+                    			<use>core_write</use>
+                		</connection>
+            		</categorytrans_write>
+            		<categorytrans_read>
+                		<connection>
+                    			<use>core_read</use>
+                		</connection>
+            		</categorytrans_read>
+        	</resources> 
+        <blocks>
+		<categorytrans>
+                	<class>Medma_Categorytrans_Block</class>
+		</categorytrans>
+        </blocks>
+        <helpers>
+		<categorytrans>
+			<class>Medma_Categorytrans_Helper</class>
+		</categorytrans>
+        </helpers>
+    </global>
+
+</config>

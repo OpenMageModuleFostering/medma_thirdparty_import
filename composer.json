@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Medma_Thirdparty_Import",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "This extension imports the products from 3rd Party websites.",
+    "authors": [
+    {
+        "name": "Medma Infomatix",
+        "email": "gaurav@medma.in"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

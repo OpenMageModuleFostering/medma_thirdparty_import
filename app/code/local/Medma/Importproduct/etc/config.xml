@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+	<Medma_Importproduct>
+            <version>0.1.2</version>
+        </Medma_Importproduct>
+    </modules>
+    <global>
+	 <models>
+		 <importproduct>
+			    <class>Medma_Importproduct_Model</class>
+		    </importproduct>
+        </models>
+	<!--<events>
+		<checkout_cart_product_add_after>
+			<observers>
+				<medma_importproduct>
+					<class>Medma_Importproduct_Model_Observer</class>
+					<method>importProductMedma</method>
+				</medma_importproduct>
+			</observers>
+		</checkout_cart_product_add_after>
+	</events>-->
+   </global>
+   <crontab>
+	   <jobs>
+		   <medma_importproduct>
+			   <schedule><cron_expr>0 20 * * *</cron_expr></schedule>
+			   <run><model>importproduct/observer::importProductMedma</model></run>
+		   </medma_importproduct>
+	   </jobs>
+   </crontab>
+</config>
