@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/Medma_Thirdparty_Import",
+    "name": "openmage-module-fostering\/medma_thirdparty_import",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
